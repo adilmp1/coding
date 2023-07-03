@@ -1,0 +1,6 @@
+start
+create class shape with method numberOfSides() without definition
+create 3 subclasses of shape rectangle, triangle, and hexagon respectively
+define the method numberOfSides() in all these subclasses rectangle, triangle, hexagon respectively
+invoke numberOfSides() by creating reference variables of class shape which refers to each of these subclasses
+stop 

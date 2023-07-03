@@ -1,0 +1,20 @@
+start
+declare a 2d array c
+input number of rows and columns of matrix  a  m,n
+input number of rows and columns of matrix b   p,q
+if n and p are not same
+    print cannot multiply
+    exit the program
+i=0
+j=0
+c[i][j]=0
+k=0
+c[i][j]+=a[i][k]*b[k][j];
+k++
+repeat steps 12-13 until k=n
+j++
+repeat steps 10-15 until j=q
+i++
+repeat steps 9-17 until i=m
+print matrix c
+stop

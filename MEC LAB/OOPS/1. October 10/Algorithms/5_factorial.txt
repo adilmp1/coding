@@ -1,0 +1,8 @@
+1. start
+2. input the number n
+3. i=1,fact=1
+4. fact=fact*i
+5. i++
+6. repeat steps 4-5 until i=n 
+7. print fact
+8. stop

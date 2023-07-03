@@ -1,0 +1,8 @@
+algorithm for polyVal(poly a[], int start,int end, int x)
+start
+value=0
+for i = start to end+1
+    value += a[start].coeff * pow(x,a[start].exp)
+End for
+return value
+stop

@@ -1,0 +1,9 @@
+1.  start
+2.  sum=0
+3.  enter the string
+4.  create stringtokanizer st of the string 
+5.  while st has more tokens 
+6.      get next token, parse into int 
+7.      sum+=token;
+8.  print sum
+9.  stop

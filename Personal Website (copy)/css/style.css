@@ -1,0 +1,80 @@
+*{
+    overflow: hidden;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+}
+.navbar ul
+{
+    width: 60vh;
+    position: absolute;
+    display: flex;
+    justify-content:space-evenly;
+}
+.navbar ul a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.item{
+    display: flex;
+    font-size: 21px;
+    justify-content: center;
+    width: 78.3px;
+    height: 29.7px;
+    align-items: center;
+    border-radius: 19px;
+    background-color: rgb(245, 245, 245);
+    padding: 10px 25px;
+    transition-property: width,height;
+    transition-duration: .3s;
+}
+.item:hover{
+    display: flex;
+    font-size: 21px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 19px;
+    background-color: rgb(238, 228, 228);
+}
+.container
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.text-area
+{
+    font-size: 30px;
+    color: white;
+}
+.image img{
+    border-radius: 13px;
+    /* margin: 55px 0px 0px -60px; */
+    width: 331.2px;
+    height: 666px;
+    transition-property: width, height;
+    transition-duration: .5s;
+    
+}
+.image img:hover{
+    width: 358.8px;
+    height: 721.5px;
+}
+@keyframes adil{
+    from{
+        margin-left: -300px;
+    }
+    to{
+        margin-left: 0px;
+    }
+}
+
+@keyframes adil2{
+    from{
+        margin-left: 300px;
+    }
+    to{
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+int palindromeCheck(char str[])
+{
+    int i;
+    int len=strlen(str);
+    for(i=0;str[i]!='\0';i++)
+    {
+        if(str[i]!=str[len-i-1])
+        {
+            return 0;
+        }
+    }
+    return 1;
+}
+int largestSubstring(char str[])
+{
+    int i,j;
+    for(i=0;str[i]!='\0';i++)
+    {
+        
+    }
+}
+int main()
+{
+    char str[]="abaxyzzyxf";
+    system("clear");
+}

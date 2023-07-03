@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "array": "c",
+        "string": "c",
+        "string_view": "c",
+        "iostream": "cpp",
+        "algorithm": "c",
+        "random": "c",
+        "*.tcc": "c",
+        "deque": "c",
+        "unordered_map": "c",
+        "vector": "c"
+    }
+}

@@ -1,0 +1,110 @@
+*{
+    overflow: hidden;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+}
+.container2{
+    display: flex;
+    justify-content: center;
+    height: 1000px;
+    display: flex;
+}
+.container{
+    color: white;
+    display: flex table-column;
+    align-items: center;
+    font-size: 68px;
+    margin: 269px 89px;
+    line-height: 138px;
+}
+.title{
+    /* margin: 0px 100px; */
+    animation: adil 1s ease-in-out 0s 1 ;
+}
+.content{   
+    font-size: 25px;
+    line-height: 55px;
+    white-space: nowrap;  
+    animation: adil2 1s ease-in-out 0s 1;
+}
+@keyframes adil{
+    from{
+        margin-left: -300px;
+    }
+    to{
+        margin-left: 0px;
+    }
+}
+
+@keyframes adil2{
+    from{
+        margin-left: 300px;
+    }
+    to{
+        margin-left: 0;
+    }
+}
+.image{
+    margin: 0px 100px;
+    /* width: 441.6px;
+    height: 888px; */
+}
+.image img{
+    border-radius: 13px;
+    margin: 55px 0px 0px -60px;
+    width: 331.2px;
+    height: 666px;
+    transition-property: width, height;
+    transition-duration: .5s;
+    
+}
+.image img:hover{
+    width: 358.8px;
+    height: 721.5px;
+}
+.navbar{
+    position: fixed;
+}
+.navbar ul
+{
+    display: flex;
+}
+.navbar ul li{
+    list-style-type: none;
+}
+.navbar ul a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.item{
+    display: flex;
+    font-size: 21px;
+    justify-content: center;
+    width: 78.3px;
+    height: 29.7px;
+    align-items: center;
+    border-radius: 19px;
+    margin: 10px 80px 0px 0px;
+    background-color: rgb(245, 245, 245);
+    padding: 10px 25px;
+    transition-property: width,height;
+    transition-duration: .3s;
+}
+.item:hover{
+    display: flex;
+    width: 104.4px;
+    height: 39.6px;
+    font-size: 21px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 19px;
+    margin: 10px 80px 0px 0px;
+    background-color: rgb(238, 228, 228);
+    padding: 10px 25px;
+}
+.current
+{
+    background-color: rgb(196, 186, 186);
+}

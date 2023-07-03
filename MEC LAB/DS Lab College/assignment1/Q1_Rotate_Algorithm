@@ -1,0 +1,41 @@
+start
+read number of elements in the array a
+read array elements
+read number of rotations cr
+read rotating direction ro (l or r)
+if ro equals l
+{
+	store number of elements till cr th position of a into another array b
+	
+	i=0;
+	a[i] = a[i+cr]
+	i++
+	repeat steps 10-11 until i<cr
+	
+	j=0
+	a[i] = b[j]
+	i++
+	j++
+	repeat steps 16-18 until i<n
+	
+	print array a
+}
+if ro equals r
+{
+	store number of elements from n-cr th position of a into another array b
+	
+	i=n-1;
+	a[i] = a[i-cr]
+	i--
+	repeat steps 28-29 until i>=0
+	
+	j=0
+	i=0
+	a[i] = b[j]
+	i++
+	j++
+	repeat steps 34-36 until i<cr
+	print array a
+}
+
+	 

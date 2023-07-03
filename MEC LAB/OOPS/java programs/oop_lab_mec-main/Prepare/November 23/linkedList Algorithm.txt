@@ -1,0 +1,66 @@
+1.  start
+2   create class Node containing parameters int data, Node next, Node prev=NULL
+3.  Node head=NULL, tail=NULL
+4.  stop
+
+Algorithm for addElement(int data)
+1.  start
+2.  create object n of Node with data
+3.  if head==NULL than
+4.      head = n 
+5.  else
+6.      tail.next = n 
+7.      n.prev = tail
+8.  Endif
+9.  stop
+
+Algorithm for addAtHead(int data)
+1.  start
+2.  create object n of Node with data
+3.  n.next = head 
+4.  head.prev = n 
+5.  head = n 
+6.  stop
+
+Algorithm for insertAfter(int data, int after)
+1.  start 
+2.  create object n of Node with data
+3.  Node temp = head
+4.  while temp.data!=after && temp.next!=NULL
+5.      temp=temp.next
+6.  Endwhile
+7.  n.next = temp.next
+8.  n.prev = temp
+9.  temp.next.prev=n
+10.  temp.next = n
+11. stop
+
+Algorithm for deleteData(int item)
+1.  start
+2.  Node temp = head
+3.  while temp.data!=item && temp.next!=NULL
+4.      temp=temp.next
+5.  Endwhile
+6.  temp.next.prev = temp.prev
+7.  temp.prev.next = temp.next
+8.  stop
+
+Algorithm for display()
+1.  start
+2.  Node temp = head 
+3.  while temp!=NULL
+4.      print temp.data
+5.      temp = temp.next
+6.  Endwhile
+7.  stop
+
+
+
+
+
+
+
+
+
+
+

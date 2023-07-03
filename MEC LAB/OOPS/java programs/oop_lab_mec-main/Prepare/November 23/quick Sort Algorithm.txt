@@ -1,0 +1,51 @@
+1.  start
+2.  create string array paramter in the class QuickSort (names[])
+3.  create length(length of string array) parameter in the class QuickSort (length)
+4.  enter the n names to string array nameList
+5.  quickSort(nameList)
+6.  print nameList
+7.  stop
+
+Algorithm for sort(string array[])
+1.  start
+2.  this.names = array
+3.  this.length = n
+4.  quickSort(0,length-1)
+5.  stop
+
+Algorithm for quickSort(int lb,int hb)
+1.  start
+2.  i=lb
+3.  j=hb
+4.  pivote = this.names[0]
+5.  while i<=j
+6.      while this.names[i].compareTo(pivote)<0 
+7.          i++ 
+8.      Endwhile
+
+9.      while this.names[j].compareTo(pivote)>0 
+10.         j--
+11.     Endwhile
+
+12.     if i<=j
+13.         swap ith and jth name
+14.         i++
+15.         j--
+16.     Endif
+17. Endwhile
+
+18. if lb<j
+19.     quickSort(lb,j)  
+20. Endif
+
+21. if(i<hb)
+22.     quickSort(i,hb)
+23. Endif
+24. stop
+
+
+
+
+
+
+

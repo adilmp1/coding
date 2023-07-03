@@ -1,0 +1,55 @@
+body {
+  background-color: cyan;
+}
+.container {
+  text-align: center;
+  background-color: blue;
+  height: 200px;
+  width: 80%;
+  background-color: red;
+  animation-name: demo;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  transition: all 4s;
+  transition-timing-function: ease-in;
+}
+
+.container:hover{
+    width: 50%;
+    transform: skew(0deg);
+}
+
+@keyframes demo{
+    from{
+        color: beige;
+    }
+    to{
+        color: cadetblue;
+    }
+}
+/* @keyframes demo{
+    from{
+        color: darkcyan;
+    }
+    to{
+        color: cadetblue;
+        text-shadow: 5px 5px 5px rgb(10, 9, 9);
+        font-size: 2rem;
+    }
+} */
+
+/* animation can be done also by percentage method  */
+
+/* @media (min-width: 500px) and (max-width: 1000px) {
+  .container {
+    background-color: red;
+    animation-name: demo;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    transition: all 4s;
+    transition-timing-function: ease-in-out;
+  }
+} */

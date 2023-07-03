@@ -1,0 +1,31 @@
+algorithm for push(int data)
+start
+addElement(int data)
+stop
+
+algorithm for pop()
+start
+ptr = head
+if ptr==NULL then
+    print "Stack is Empty"
+else
+    while ptr->next!=NULL
+        ptr = ptr->next
+    Endwhile
+    return ptr->data
+    deleteNode(ptr->data)
+Endif
+stop
+
+algorithm for display()
+start
+ptr = head
+if ptr==NULL then
+    print "Stack is Empty"
+else
+    while ptr!=NULL
+        print ptr->data
+        ptr = ptr->next
+    Endwhile
+Endif
+stop

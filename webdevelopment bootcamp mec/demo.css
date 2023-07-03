@@ -1,0 +1,20 @@
+#head{
+    color: red;
+    font-size: 30px;
+}
+body{
+    background-color: rgb(59, 26, 2);
+}
+.container{
+    height: 200px;
+    width: 300px;
+    padding: 10px;
+    background-color: cyan;
+    border: 5px dashed red;
+    border-radius: 1rem;
+    color: black;
+    margin: auto;
+    margin: 1rem;
+    margin: 15rem auto;
+    float: right;
+}

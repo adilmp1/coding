@@ -1,0 +1,36 @@
+algorithm for addAtPos(int pos, int item)
+1.  start
+2.  Node temp = head
+3.  Node n = new Node(data)
+4.  if pos==1 then
+5.      addAtHead(data)
+6.      return
+7.  Endif
+8.  i=1
+9.  while i<=pos-1 && temp.next!=null
+10.     temp = temp.next
+11.     i++
+12. Endwhile 
+13. n.next = temp 
+14. n.prev = temp.prev 
+15. temp.prev.next = n 
+16. temp.prev = n 
+17. stop
+
+
+algorithm for deletePos(int pos)
+    start
+    Node temp = head 
+    if pos==1 then 
+        temp = temp.next
+        head = temp
+        return
+    Endif
+    i=1
+    while i<=pos-1 && temp.next!=null
+        temp=temp.next
+        i++
+    Endwhile
+    temp.prev.next = temp.next
+    temp.next.prev = temp.prev
+    stop

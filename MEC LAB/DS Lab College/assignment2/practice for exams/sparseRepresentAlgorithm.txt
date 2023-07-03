@@ -1,0 +1,28 @@
+typedef struct{
+    int row
+    int col
+    int val
+}sparse
+
+start
+read no of rows of matrix m
+read no of columns of matrix n
+sp[0].row = m
+sp[0].column = n
+read the elements of the matrix arr
+
+for i = 0 to m 
+    for j = 0 to n
+        if arr[i][j]!=0
+            sp[k].row=i
+            sp[k].col=j
+            sp[k].val=arr[i][j]
+            k++
+        Endif
+    Endfor
+Endfor
+
+a[0].val = k-1
+sparsity = (m*n+1-k)/(m*n)
+stop
+

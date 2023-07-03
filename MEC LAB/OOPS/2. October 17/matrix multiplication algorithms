@@ -1,0 +1,21 @@
+start
+declare a 2d array c
+input number of rows and columns of matrix  a  m,n
+input number of rows and columns of matrix b   p,q
+if n and p are not same
+    print cannot multiply
+    exit the program
+Read Matrix A and Matrix B
+i=0
+j=0
+c[i][j]=0
+k=0
+c[i][j]+=a[i][k]*b[k][j];
+k++
+repeat steps 13-14 until k=n
+j++
+repeat steps 11-16 until j=q
+i++
+repeat steps 10-18 until i=m
+print matrix c
+stop

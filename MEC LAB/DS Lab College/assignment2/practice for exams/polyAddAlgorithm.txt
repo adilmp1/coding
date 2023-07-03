@@ -1,0 +1,65 @@
+typedef struct{
+    int coeff
+    int exp
+}poly
+
+algorithm for readPoly(poly a[],int start,int end)
+start
+for i = start to end+1
+    input a[i].coeff and a[i].exp
+End for
+stop
+
+algorithm for printPoly(poly a[],int start,int end)
+start
+for i = start to end+1
+    input a[i].coeff and a[i].exp
+End for
+
+
+
+algorithm for polyAdd(poly a[], int startA, int endA, int startB, int endB, int startD, int *end)
+start   
+endD = *end
+algorithm for addA()
+    start
+    a[endD].exp =a[startA].exp
+    a[endD].coeff =a[startA].coeff
+    startA++
+    endD++
+    stop
+End addA
+
+algorithm for addB()
+    start
+    a[endD].exp=a[startB].exp
+    a[endD].coeff=a[startB].coeff
+    startB++
+    endD++
+    stop
+End addB
+
+while startA<=endA && startB<=endB
+    if a[startA].exp>a[startB].exp 
+        addA()
+    else if a[startA].exp<a[startB].exp 
+        addB()
+    else
+        a[endD].exp=a[startB].exp
+        a[endD].coeff=a[startB].coeff+a[startA].coeff
+        startA++
+        startB++
+        endD++
+    Endif
+Endwhile
+
+while startA<=endA
+    addA()
+Emdwhile
+
+while startB<=endB
+    addB()
+Endwhile
+*end = endD-1
+stop
+        

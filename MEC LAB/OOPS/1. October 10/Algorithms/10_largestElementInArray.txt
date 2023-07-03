@@ -1,0 +1,11 @@
+1. start
+2. input number of elements n
+3. input elements to array a
+4. store first element of array a into large
+5. i=0
+6. if large<a[i]
+7.      large = a[i]
+8. i++
+9. repeat steps 6-8 until i=n;
+10. print large
+11. stop

@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "random": "c",
+        "functional": "c",
+        "string.h": "c",
+        "array": "c",
+        "string_view": "c",
+        "initializer_list": "c",
+        "utility": "c",
+        "stdio.h": "c"
+    }
+}

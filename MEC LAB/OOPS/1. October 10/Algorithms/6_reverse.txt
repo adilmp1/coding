@@ -1,0 +1,9 @@
+1.  start
+2.  input number n
+3.  rev=0
+4.  dig = n%10
+5.  rev = rev*10 + digit
+6.  n = n/10
+7.  repeat steps 4-6 until n=0
+8.  print rev
+9.  stop

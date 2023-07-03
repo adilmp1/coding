@@ -1,0 +1,14 @@
+struct node *primeList(struct node *head)
+{
+    if(head==NULL)
+    {
+        return head;
+    }
+    struct node *ptr = head;
+    while(ptr != NULL)
+    {
+        ptr->data = closestPrime(ptr->data);
+        ptr = ptr->next;
+    }
+    return head;
+}

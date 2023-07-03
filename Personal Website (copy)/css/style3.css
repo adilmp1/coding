@@ -1,0 +1,99 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+body{
+    background-color: black;
+    /* color: white; */
+}
+.navbar{
+    position: fixed;
+}
+.navbar ul
+{
+    display: flex;
+}
+.navbar ul li{
+    list-style-type: none;
+}
+.navbar ul a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.item{
+    display: flex;
+    font-size: 21px;
+    justify-content: center;
+    width: 78.3px;
+    height: 29.7px;
+    align-items: center;
+    border-radius: 19px;
+    margin: 10px 80px 0px 0px;
+    background-color: rgb(245, 245, 245);
+    padding: 10px 25px;
+    transition-property: width,height;
+    transition-duration: .3s;
+}
+.item:hover{
+    display: flex;
+    width: 104.4px;
+    height: 39.6px;
+    font-size: 21px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 19px;
+    margin: 10px 80px 0px 0px;
+    background-color: rgb(238, 228, 228);
+    padding: 10px 25px;
+}
+.container{
+    margin: 165px 300px 300px 300px;
+    font-size: 25px;
+    display: flex table-column;
+}
+.headings{
+    font-weight: bold;
+    color: rgb(255, 255, 255);   
+}
+
+.details{
+    margin: 40px 0px;
+    color: #f5e4ff;
+    animation: adil2 1s ease-in-out 0s 1;
+}
+@keyframes adil2{
+    from{
+        margin: 900px 0px 0px 0px;
+    }
+    to{
+        margin: 40px 0px;
+    }
+}
+.inter{
+    margin: 0px 40px;
+}
+.logoskill{
+    display: flex;
+    margin: 20px 15px;
+}
+.logo{
+    margin: 0px 20px;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    transition-property: width, height;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+.logo img:hover{
+    width: 120px;
+    height: 120px;
+}
+.headtext{
+    margin: 9px 36px;
+}
+.current
+{
+    background-color: rgb(196, 186, 186);
+}

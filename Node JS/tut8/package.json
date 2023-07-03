@@ -1,0 +1,20 @@
+{
+  "name": "tut8",
+  "version": "1.0.0",
+  "description": "this is the best package ever built by someone",
+  "main": "tut8.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "super"
+  ],
+  "author": "adil",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "slugify": "^1.6.5"
+  }
+}

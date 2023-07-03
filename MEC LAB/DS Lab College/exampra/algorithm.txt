@@ -1,0 +1,20 @@
+sparse transpose
+
+Algorithm transpose(a,b)
+{
+    b[0].row = a[0].col
+    b[0].col = a[0].row
+    b[0].val = a[0].val
+    k=1
+    for(i = 0 to a[0].col-1)
+        for(j=0 to a[0].val)
+            if(a[j].col==i)
+                b[k].row = a[j].col
+                b[k].col = a[j].row
+                b[k].val = a[j].val
+                k++
+            Endif
+        Endfor
+    Endfor
+
+}

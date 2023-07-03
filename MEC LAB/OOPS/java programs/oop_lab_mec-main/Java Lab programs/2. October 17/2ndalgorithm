@@ -1,0 +1,15 @@
+start
+enter a string str
+enter character to be searched c
+store the length of the string into len
+count=0
+i=0
+traverse through each character of str
+if ith character equals to c
+increment count by 1
+i++
+repeat steps 8-10 until i = len
+print count
+stop
+
+

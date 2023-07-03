@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script dates</title>
+</head>
+<body>
+    <div class="container">
+        current time is <span id="time"></span>
+    </div>
+
+    <script>
+        console.log("This is date and time tutorial");
+
+        let now = new Date();
+        console.log(now);
+        // let newdate = new Date("2029-09-30");
+        // console.log(newdate);
+        
+        let newdate = new Date(2030,2,2,2,2);
+        console.log(newdate);
+
+        let yr = newdate.getFullYear();
+        console.log("year is ",yr);
+
+        setInterval(updatetime,1000);
+
+        function updatetime(){
+            time.innerHTML = new Date();
+        }
+    </script>
+</body>
+</html>

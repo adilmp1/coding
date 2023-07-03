@@ -1,0 +1,9 @@
+1. start
+2. create a file output stream object w
+3. input the string to be written
+4. convert string into sequence of bytes using getBytes and write into w
+5. handle filenot found exception and ioexception
+6. create file input stream object r 
+7. read content from the file r and print using typecasting
+8. handle filenotfound exception and ioexception
+9. stop

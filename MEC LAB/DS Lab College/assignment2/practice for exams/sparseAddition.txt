@@ -1,0 +1,59 @@
+typedef struct{
+    int row
+    int col
+    int val
+}sparse
+
+Algorithm for sparseAdd sparse a[],sparse b[],sparse sum[]
+start
+i=1,j=1,k=1
+if  a[0].row!=b[0].row OR a[0].col!=b[0].col
+    print "Cannot Add"
+    exit
+Endif
+
+Algorithm for addA 
+    start
+    sum[k].row=a[i].row
+    sum[k].col=a[i].col
+    sum[k].val=a[i].val
+    i++
+    k++
+    stop
+End addA
+
+Algorithm for addB 
+    start
+    sum[k].row=b[j].row
+    sum[k].col=b[j].col
+    sum[k].val=b[j].val
+    j++
+    k++
+    stop
+End addB
+while i<=a[0].val and j<=b[0].val
+    if a[i].row < b[j].row or  a[i].row == b[j].row and a[i].col < b[j].col
+        addA()
+    else if a[i].row > b[j].row or  a[i].row == b[j].row and a[i].col > b[j].col
+        addB()
+    else if a[i].row==b[j].row and a[i].col==b[j].col
+        sum[k].row=a[i].row
+        sum[k].col=a[i].col
+        sum[k].val=a[i].val+b[j].val
+        j++
+        i++
+        k++
+    End if
+End while
+
+while i<=a[0].val 
+    addA 
+End while
+
+while j<=b[0].val 
+    addB 
+End while
+
+sum[0].val=l-1
+stop
+    

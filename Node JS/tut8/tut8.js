@@ -1,0 +1,5 @@
+console.log("Anthada")
+console.log("Nokunne")
+console.log("fear ")
+console.log("ayo")
+console.log("nee")
